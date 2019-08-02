@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span id="app">dsadsada</span>
+    <script type="text/babel">
+        class HelloMessage extends React.Component {
+            render() {
+                return (<div>Hello {this.props.name},I am {this.props.id}</div>);
+            }
+            }
+    
+            ReactDOM.render(<HelloMessage name="Taylor" id="kuluoluoji" />,document.getElementById("app"));
+        </script>
+    <script src="react.development.js"></script>
+    <script src="react-dom.development.js"></script>
+    <script src="babel.js"></script>
+</body>
+</html>
